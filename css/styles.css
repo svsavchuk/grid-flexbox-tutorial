@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.container {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 350px 50px;
+}
+
+header {
+    grid-column: span 12;
+    background: lightblue;
+    text-transform: uppercase;
+    display: flex;
+}
+
+header > div {
+    padding: 0.5rem;
+}
+
+header>:nth-child(3) {
+    margin-left: auto;
+}
+
+aside {
+    grid-column: span 2;
+    background: lightcoral;
+}
+
+main {
+    grid-column: span 10;
+    background: #F9CC6E;
+}
+
+footer {
+    grid-column: span 12;
+    background: lightblue;
+}
